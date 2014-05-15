@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+	<meta name="robots" content="noindex" />
+
+	<title>File application/models/BalnearisModel.php | NuriaMVC</title>
+
+	<script type="text/javascript" src="resources/combined.js?3715972085"></script>
+	<script type="text/javascript" src="elementlist.js?4019009948"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-AccedirController.html">AccedirController</a></li>
+				<li><a href="class-AccedirModel.html">AccedirModel</a></li>
+				<li><a href="class-BalnearisController.html">BalnearisController</a></li>
+				<li class="active"><a href="class-BalnearisModel.html">BalnearisModel</a></li>
+				<li><a href="class-Bootstrap.html">Bootstrap</a></li>
+				<li><a href="class-CarritoController.html">CarritoController</a></li>
+				<li><a href="class-CarritoModel.html">CarritoModel</a></li>
+				<li><a href="class-Config.html">Config</a></li>
+				<li><a href="class-ControllerBase.html">ControllerBase</a></li>
+				<li><a href="class-DesconectarController.html">DesconectarController</a></li>
+				<li><a href="class-DesconectarModel.html">DesconectarModel</a></li>
+				<li><a href="class-Index.html">Index</a></li>
+				<li><a href="class-IndexController.html">IndexController</a></li>
+				<li><a href="class-IndexModel.html">IndexModel</a></li>
+				<li><a href="class-IndexView.html">IndexView</a></li>
+				<li><a href="class-Model.html">Model</a></li>
+				<li><a href="class-Obrem.html">Obrem</a></li>
+				<li><a href="class-ParcsController.html">ParcsController</a></li>
+				<li><a href="class-ParcsModel.html">ParcsModel</a></li>
+				<li><a href="class-PerfilController.html">PerfilController</a></li>
+				<li><a href="class-PerfilModel.html">PerfilModel</a></li>
+				<li><a href="class-PoliticaController.html">PoliticaController</a></li>
+				<li><a href="class-PoliticaModel.html">PoliticaModel</a></li>
+				<li><a href="class-RegistrarseController.html">RegistrarseController</a></li>
+				<li><a href="class-RegistrarseModel.html">RegistrarseModel</a></li>
+				<li><a href="class-ReservaController.html">ReservaController</a></li>
+				<li><a href="class-ReservaModel.html">ReservaModel</a></li>
+				<li><a href="class-Session.html">Session</a></li>
+				<li><a href="class-SPDO.html">SPDO</a></li>
+				<li><a href="class-UserController.html">UserController</a></li>
+				<li><a href="class-UserModel.html">UserModel</a></li>
+				<li><a href="class-Usuari.html">Usuari</a></li>
+				<li><a href="class-View.html">View</a></li>
+				<li><a href="class-VolsController.html">VolsController</a></li>
+				<li><a href="class-VolsModel.html">VolsModel</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-None.html" title="Summary of None"><span>Namespace</span></a>
+			</li>
+			<li>
+				<a href="class-BalnearisModel.html" title="Summary of BalnearisModel"><span>Class</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<pre><code><span id="1" class="l"><a class="l" href="#1"> 1: </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a class="l" href="#2"> 2: </a><span class="php-comment">/**
+</span></span><span id="3" class="l"><a class="l" href="#3"> 3: </a><span class="php-comment"> * Este es el modelo de la ventana de Balnearios
+</span></span><span id="4" class="l"><a class="l" href="#4"> 4: </a><span class="php-comment"> * @author Pau Garcia
+</span></span><span id="5" class="l"><a class="l" href="#5"> 5: </a><span class="php-comment"> */</span>
+</span><span id="6" class="l"><a class="l" href="#6"> 6: </a><span class="php-keyword1">class</span> <a id="BalnearisModel" href="#BalnearisModel">BalnearisModel</a> <span class="php-keyword1">extends</span> Model{
+</span><span id="7" class="l"><a class="l" href="#7"> 7: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="___construct" href="#___construct">__construct</a>(<span class="php-var">$arr</span>) {
+</span><span id="8" class="l"><a class="l" href="#8"> 8: </a>        parent::__construct(<span class="php-var">$arr</span>);
+</span><span id="9" class="l"><a class="l" href="#9"> 9: </a>        <span class="php-var">$balnearios</span> = <span class="php-quote">&quot;&quot;</span>;
+</span><span id="10" class="l"><a class="l" href="#10">10: </a>        <span class="php-var">$this</span>-&gt;datain=<span class="php-var">$this</span>-&gt;config;
+</span><span id="11" class="l"><a class="l" href="#11">11: </a>        <span class="php-comment">//afegir en DataOut els paràmetres URL</span>
+</span><span id="12" class="l"><a class="l" href="#12">12: </a>        <span class="php-var">$results</span> = <span class="php-var">$this</span>-&gt;db-&gt;query(<span class="php-quote">'SELECT * FROM balnearis;'</span>);
+</span><span id="13" class="l"><a class="l" href="#13">13: </a>        <span class="php-var">$this</span>-&gt;dataout = <span class="php-keyword1">Array</span>();
+</span><span id="14" class="l"><a class="l" href="#14">14: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$results</span> <span class="php-keyword1">as</span> <span class="php-var">$result</span>){
+</span><span id="15" class="l"><a class="l" href="#15">15: </a>        <span class="php-var">$ident</span> = <span class="php-var">$result</span>[<span class="php-quote">'id'</span>];
+</span><span id="16" class="l"><a class="l" href="#16">16: </a>        <span class="php-comment">//Si aquest Balneari te disponibles places actualment el mostrem</span>
+</span><span id="17" class="l"><a class="l" href="#17">17: </a>        <span class="php-var">$unitats</span> = <span class="php-var">$this</span>-&gt;db-&gt;query(<span class="php-quote">'SELECT nplaces FROM serveis where id = '</span>.<span class="php-var">$ident</span>.<span class="php-quote">';'</span>)-&gt;fetch();
+</span><span id="18" class="l"><a class="l" href="#18">18: </a>        <span class="php-keyword1">if</span>(<span class="php-var">$unitats</span>[<span class="php-num">0</span>] &gt; <span class="php-num">0</span>)
+</span><span id="19" class="l"><a class="l" href="#19">19: </a>        {
+</span><span id="20" class="l"><a class="l" href="#20">20: </a>        <span class="php-var">$preu</span> = <span class="php-var">$this</span>-&gt;db-&gt;query(<span class="php-quote">'SELECT preu FROM serveis where id = '</span>.<span class="php-var">$ident</span>.<span class="php-quote">';'</span>)-&gt;fetch();
+</span><span id="21" class="l"><a class="l" href="#21">21: </a>        <span class="php-var">$Nom</span> = <span class="php-var">$result</span>[<span class="php-quote">'Nom'</span>];
+</span><span id="22" class="l"><a class="l" href="#22">22: </a>        <span class="php-var">$Direccio</span> = <span class="php-var">$result</span>[<span class="php-quote">'Direccio'</span>];
+</span><span id="23" class="l"><a class="l" href="#23">23: </a>        <span class="php-var">$Web</span> = <span class="php-var">$result</span>[<span class="php-quote">'Web'</span>]; 
+</span><span id="24" class="l"><a class="l" href="#24">24: </a>        <span class="php-var">$Latitud</span> = <span class="php-var">$result</span>[<span class="php-quote">'lati'</span>];
+</span><span id="25" class="l"><a class="l" href="#25">25: </a>        <span class="php-var">$Longitud</span> = <span class="php-var">$result</span>[<span class="php-quote">'long'</span>];
+</span><span id="26" class="l"><a class="l" href="#26">26: </a>        <span class="php-var">$Frase</span> = <span class="php-quote">&quot;&lt;div class='producto'&gt;&lt;div class='producto1'&gt;&lt;h1&gt;&quot;</span>.<span class="php-var">$Nom</span>.<span class="php-quote">&quot;&lt;/h1&gt;&lt;h3&gt;&quot;</span>.<span class="php-var">$Direccio</span>.<span class="php-quote">&quot; &lt;a href='http://&quot;</span>.<span class="php-var">$Web</span>.<span class="php-quote">&quot;'&gt;&quot;</span>.<span class="php-var">$Web</span>.<span class="php-quote">&quot;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;Preu Entrada: &quot;</span>.<span class="php-var">$preu</span>[<span class="php-num">0</span>].<span class="php-quote">&quot;&lt;/h4&gt;&lt;input type='button' value='Mapa' onClick='Mapa(&quot;</span>.<span class="php-var">$Longitud</span>.<span class="php-quote">&quot;,&quot;</span>.<span class="php-var">$Latitud</span>.<span class="php-quote">&quot;,&quot;</span>.<span class="php-var">$ident</span>.<span class="php-quote">&quot;);'/&gt;&quot;</span>;
+</span><span id="27" class="l"><a class="l" href="#27">27: </a>            <span class="php-keyword1">if</span>(Session::get(<span class="php-quote">&quot;usr&quot;</span>) != <span class="php-quote">&quot;&quot;</span>)
+</span><span id="28" class="l"><a class="l" href="#28">28: </a>            {
+</span><span id="29" class="l"><a class="l" href="#29">29: </a>                <span class="php-var">$balnearios</span> = <span class="php-var">$balnearios</span>.<span class="php-var">$Frase</span>.<span class="php-quote">&quot;&lt;form action='{APP_W}/parcs/reserv' method='POST'&gt;&lt;input type='text' name='id_ser' class='ocult' style='display:none' value='&quot;</span>.<span class="php-var">$ident</span>.<span class="php-quote">&quot;'&gt;&lt;/input&gt;Unitats: &lt;input type'text' name='num'/&gt;&lt;input type='submit' value='Comprar'/&gt;&lt;/form&gt;&lt;br/&gt;&lt;/div&gt;&lt;div class='producto2'&gt;&lt;div class='mapa' id='&quot;</span>.<span class="php-var">$ident</span>.<span class="php-quote">&quot;'&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&quot;</span>;
+</span><span id="30" class="l"><a class="l" href="#30">30: </a>            }
+</span><span id="31" class="l"><a class="l" href="#31">31: </a>            <span class="php-keyword1">else</span> 
+</span><span id="32" class="l"><a class="l" href="#32">32: </a>            {
+</span><span id="33" class="l"><a class="l" href="#33">33: </a>                <span class="php-var">$balnearios</span> = <span class="php-var">$balnearios</span>.<span class="php-var">$Frase</span>.<span class="php-quote">&quot;&lt;/div&gt;&lt;div class='producto2'&gt;&lt;div class='mapa' id='&quot;</span>.<span class="php-var">$ident</span>.<span class="php-quote">&quot;'&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&quot;</span>;
+</span><span id="34" class="l"><a class="l" href="#34">34: </a>            }
+</span><span id="35" class="l"><a class="l" href="#35">35: </a>        }
+</span><span id="36" class="l"><a class="l" href="#36">36: </a>        }
+</span><span id="37" class="l"><a class="l" href="#37">37: </a>        <span class="php-keyword1">if</span>(Session::get(<span class="php-quote">&quot;usr&quot;</span>) != <span class="php-quote">&quot;&quot;</span>)
+</span><span id="38" class="l"><a class="l" href="#38">38: </a>        {
+</span><span id="39" class="l"><a class="l" href="#39">39: </a>            <span class="php-var">$this</span>-&gt;addDataout(<span class="php-keyword1">array</span>(<span class="php-quote">'Login'</span> =&gt; <span class="php-quote">'&lt;a href=&quot;{APP_W}/perfil&quot;&gt;Perfil&lt;/a&gt;'</span>, <span class="php-quote">'Registrarse'</span>=&gt;<span class="php-quote">'&lt;a href=&quot;{APP_W}/desconectar&quot;&gt;Desconectar&lt;/a&gt;'</span>, <span class="php-quote">'balnearios'</span> =&gt; <span class="php-var">$balnearios</span>));
+</span><span id="40" class="l"><a class="l" href="#40">40: </a>        }
+</span><span id="41" class="l"><a class="l" href="#41">41: </a>        <span class="php-keyword1">else</span> {
+</span><span id="42" class="l"><a class="l" href="#42">42: </a>            <span class="php-var">$this</span>-&gt;addDataout(<span class="php-keyword1">array</span>(<span class="php-quote">'Login'</span> =&gt; <span class="php-quote">'Login'</span>,<span class="php-quote">'Registrarse'</span>=&gt;<span class="php-quote">'Registrarse'</span>, <span class="php-quote">'balnearios'</span> =&gt; <span class="php-var">$balnearios</span>));
+</span><span id="43" class="l"><a class="l" href="#43">43: </a>        }
+</span><span id="44" class="l"><a class="l" href="#44">44: </a>    }
+</span><span id="45" class="l"><a class="l" href="#45">45: </a>    <span class="php-comment">/**
+</span></span><span id="46" class="l"><a class="l" href="#46">46: </a><span class="php-comment">     * Funcio per a realitzar una reserva de Balenaris.
+</span></span><span id="47" class="l"><a class="l" href="#47">47: </a><span class="php-comment">     * Si existeix una reserva del mateix usuari igual el que fa la funcio es aumentar la quantitat.
+</span></span><span id="48" class="l"><a class="l" href="#48">48: </a><span class="php-comment">     */</span>
+</span><span id="49" class="l"><a class="l" href="#49">49: </a>     <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_reserv" href="#_reserv">reserv</a>(){
+</span><span id="50" class="l"><a class="l" href="#50">50: </a>        <span class="php-comment">//Recuperem les dades del formulari per poder realitzar la reserva.</span>
+</span><span id="51" class="l"><a class="l" href="#51">51: </a>        <span class="php-var">$id</span> = <span class="php-num">0</span> + <span class="php-keyword2">mysql_real_escape_string</span>(<span class="php-var">$_POST</span>[<span class="php-quote">'id_ser'</span>]);
+</span><span id="52" class="l"><a class="l" href="#52">52: </a>        <span class="php-var">$unidades</span> = <span class="php-num">0</span> + <span class="php-keyword2">mysql_real_escape_string</span>(<span class="php-var">$_POST</span>[<span class="php-quote">'num'</span>]);
+</span><span id="53" class="l"><a class="l" href="#53">53: </a>        <span class="php-keyword1">if</span>(<span class="php-var">$unidades</span> &gt; <span class="php-num">0</span>)
+</span><span id="54" class="l"><a class="l" href="#54">54: </a>        {
+</span><span id="55" class="l"><a class="l" href="#55">55: </a>            <span class="php-var">$preu</span> = <span class="php-var">$this</span>-&gt;db-&gt;query(<span class="php-quote">'SELECT preu FROM serveis where id = '</span>.<span class="php-var">$id</span>.<span class="php-quote">';'</span>)-&gt;fetch();
+</span><span id="56" class="l"><a class="l" href="#56">56: </a>            <span class="php-var">$preu_tot</span> = <span class="php-num">0</span> + <span class="php-var">$preu</span>[<span class="php-num">0</span>] * <span class="php-var">$unidades</span>;
+</span><span id="57" class="l"><a class="l" href="#57">57: </a>            <span class="php-var">$usuari</span> = Session::get(<span class="php-quote">&quot;usr&quot;</span>);
+</span><span id="58" class="l"><a class="l" href="#58">58: </a>            <span class="php-comment">//Insertamosen reserva</span>
+</span><span id="59" class="l"><a class="l" href="#59">59: </a>            <span class="php-comment">//select id from reserves where idusuari = 1 and status = &quot;espera&quot;;</span>
+</span><span id="60" class="l"><a class="l" href="#60">60: </a>            <span class="php-var">$reserv</span> = <span class="php-var">$this</span>-&gt;db-&gt;query(<span class="php-quote">'select id from reserves where idusuari = '</span>.<span class="php-var">$usuari</span>.<span class="php-quote">' and status = &quot;espera&quot;;'</span>)-&gt;fetch();
+</span><span id="61" class="l"><a class="l" href="#61">61: </a>            <span class="php-keyword1">if</span>(<span class="php-var">$reserv</span>[<span class="php-num">0</span>] != <span class="php-keyword1">null</span>)
+</span><span id="62" class="l"><a class="l" href="#62">62: </a>            {
+</span><span id="63" class="l"><a class="l" href="#63">63: </a>                <span class="php-comment">//Consulta per veure si existeix un servei amb un id de reserva</span>
+</span><span id="64" class="l"><a class="l" href="#64">64: </a>                <span class="php-var">$existeix</span> = <span class="php-var">$this</span>-&gt;db-&gt;query(<span class="php-quote">'select idservei from serveis_reservats where idreserva = '</span>.<span class="php-var">$reserv</span>[<span class="php-num">0</span>].<span class="php-quote">' and idservei = '</span>.<span class="php-var">$id</span>.<span class="php-quote">';'</span>)-&gt;fetch();
+</span><span id="65" class="l"><a class="l" href="#65">65: </a>                <span class="php-keyword1">if</span>(<span class="php-var">$existeix</span>[<span class="php-num">0</span>] != <span class="php-keyword1">null</span>){
+</span><span id="66" class="l"><a class="l" href="#66">66: </a>                    <span class="php-var">$existeix</span> = <span class="php-var">$this</span>-&gt;db-&gt;query(<span class="php-quote">'select num_reserves from serveis_reservats where idreserva = '</span>.<span class="php-var">$reserv</span>[<span class="php-num">0</span>].<span class="php-quote">' and idservei = '</span>.<span class="php-var">$id</span>.<span class="php-quote">';'</span>)-&gt;fetch();
+</span><span id="67" class="l"><a class="l" href="#67">67: </a>                    <span class="php-var">$total</span> = <span class="php-num">0</span> + <span class="php-var">$existeix</span>[<span class="php-num">0</span>] + <span class="php-keyword2">floatval</span>(<span class="php-var">$unidades</span>);
+</span><span id="68" class="l"><a class="l" href="#68">68: </a>                    <span class="php-comment">//update serveis_reservats set num_reserves = 4 where idreserva = 10 and idservei = 1;</span>
+</span><span id="69" class="l"><a class="l" href="#69">69: </a>                    <span class="php-var">$this</span>-&gt;db-&gt;query(<span class="php-quote">'update serveis_reservats set num_reserves = '</span>.<span class="php-var">$total</span>.<span class="php-quote">' where idreserva = '</span>.<span class="php-var">$reserv</span>[<span class="php-num">0</span>].<span class="php-quote">' and idservei = '</span>.<span class="php-var">$id</span>.<span class="php-quote">';'</span>);
+</span><span id="70" class="l"><a class="l" href="#70">70: </a>                }
+</span><span id="71" class="l"><a class="l" href="#71">71: </a>                <span class="php-keyword1">else</span>{
+</span><span id="72" class="l"><a class="l" href="#72">72: </a>                    <span class="php-comment">//insertamos la linea en la tabla serveis_reservats</span>
+</span><span id="73" class="l"><a class="l" href="#73">73: </a>                    <span class="php-var">$this</span>-&gt;db-&gt;query(<span class="php-quote">'INSERT INTO serveis_reservats(idservei,idreserva,Data,num_reserves) values('</span>.<span class="php-var">$id</span>.<span class="php-quote">','</span>.<span class="php-var">$reserv</span>[<span class="php-num">0</span>].<span class="php-quote">',CURDATE(),'</span>.<span class="php-var">$unidades</span>.<span class="php-quote">');'</span>); 
+</span><span id="74" class="l"><a class="l" href="#74">74: </a>                }                
+</span><span id="75" class="l"><a class="l" href="#75">75: </a>            }
+</span><span id="76" class="l"><a class="l" href="#76">76: </a>            <span class="php-keyword1">else</span>{
+</span><span id="77" class="l"><a class="l" href="#77">77: </a>                <span class="php-comment">//Aquest usuari no te cap reserva oberta</span>
+</span><span id="78" class="l"><a class="l" href="#78">78: </a>                <span class="php-comment">//Tenim que crear una</span>
+</span><span id="79" class="l"><a class="l" href="#79">79: </a>                <span class="php-var">$this</span>-&gt;db-&gt;query(<span class="php-quote">'INSERT INTO reserves (data,idusuari, status, preu) values(CURDATE(),'</span>.<span class="php-var">$usuari</span>.<span class="php-quote">',&quot;ESPERA&quot;,'</span>.<span class="php-var">$preu_tot</span>.<span class="php-quote">');'</span>);
+</span><span id="80" class="l"><a class="l" href="#80">80: </a>                <span class="php-comment">//Obtenemos el id de la reserva</span>
+</span><span id="81" class="l"><a class="l" href="#81">81: </a>                <span class="php-var">$id_res</span> = <span class="php-var">$this</span>-&gt;db-&gt;query(<span class="php-quote">'select id From reserves order by id DESC limit 1;'</span>)-&gt;fetch(PDO::FETCH_ASSOC);
+</span><span id="82" class="l"><a class="l" href="#82">82: </a>                 <span class="php-comment">//insertamos la reserva en la tabla serveis_reservats</span>
+</span><span id="83" class="l"><a class="l" href="#83">83: </a>                <span class="php-var">$this</span>-&gt;db-&gt;query(<span class="php-quote">'INSERT INTO serveis_reservats(idservei,idreserva,Data,num_reserves) values('</span>.<span class="php-var">$id</span>.<span class="php-quote">','</span>.<span class="php-var">$id_res</span>[<span class="php-quote">'id'</span>].<span class="php-quote">',CURDATE(),'</span>.<span class="php-var">$unidades</span>.<span class="php-quote">');'</span>);  
+</span><span id="84" class="l"><a class="l" href="#84">84: </a>            }   
+</span><span id="85" class="l"><a class="l" href="#85">85: </a>        }
+</span><span id="86" class="l"><a class="l" href="#86">86: </a>    }
+</span><span id="87" class="l"><a class="l" href="#87">87: </a>}
+</span><span id="88" class="l"><a class="l" href="#88">88: </a><span class="xlang">?&gt;</span>
+</span><span id="89" class="l"><a class="l" href="#89">89: </a></span></code></pre>
+
+	<div id="footer">
+		NuriaMVC API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
